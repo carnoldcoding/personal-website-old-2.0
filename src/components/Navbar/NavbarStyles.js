@@ -17,3 +17,7 @@ export const Nav = styled.nav`
         transition: 0.8s all ease;
     }
 `;
+
+export const NavItem = styled.nav`
+    color: white;
+`;

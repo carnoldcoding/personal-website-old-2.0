@@ -1,11 +1,13 @@
 import React from 'react'
-import {Nav} from './NavbarStyles'
+import {Nav, NavItem} from './NavbarStyles'
 
 const Navbar = () => {
     return (
         <>
         <Nav>
-            Fuck yeah
+            <NavItem>
+                Hello
+            </NavItem>
         </Nav>
         </>
     )
