@@ -1,13 +1,19 @@
 import React from 'react'
-import {Nav, NavItem} from './NavbarStyles'
+import {Nav, NavItem, NavMenu, NavIcon} from './NavbarStyles'
 
 const Navbar = () => {
     return (
         <>
         <Nav>
-            <NavItem>
-                Hello
-            </NavItem>
+            <NavMenu>
+                <NavIcon>
+                    Cam.Coding()
+                </NavIcon>
+
+                <NavItem>
+                    whoami
+                </NavItem>
+            </NavMenu>
         </Nav>
         </>
     )
