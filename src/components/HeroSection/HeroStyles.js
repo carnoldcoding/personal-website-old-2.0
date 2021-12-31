@@ -15,7 +15,7 @@ export const HeroTitle = styled.h1`
 `
 
 export const ImageBox = styled.div`
-height: 10000px;
+    height: 10000px;
     background: transparent;
     position: relative;
     top: 0;
@@ -55,6 +55,16 @@ export const Image3 = styled.img`
     top: 0px;
     left: 0px;
     transform: translateY(${props => props.offset * -.3}px)
+`
+export const Image4 = styled.img`
+    z-index: 3;
+    background: transparent;
+    height: auto;
+    width: 600px;
+    position: absolute;
+    top: 400px;
+    left: 515px;
+    transform: translateY(${props => props.offset * .3}px)
 `
 
 export const Heading = styled.h1`

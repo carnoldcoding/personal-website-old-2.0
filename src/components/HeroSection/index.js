@@ -1,10 +1,11 @@
 import React, {useState, useEffect} from 'react'
-import {HeroContainer, HeroTitle, Image, Image2, Image3, ImageBox,
+import {HeroContainer, HeroTitle, Image, Image2, Image3, Image4, ImageBox,
 Heading} from './HeroStyles'
 import CC from '../../images/CC-Glow.png'
 import middle from '../../images/Middle.png'
 import foreground from '../../images/Foreground-Fade.png'
 import background from '../../images/Background.png'
+import name from '../../images/cameron.png'
 
 
 const HeroSection = () => {
@@ -34,7 +35,7 @@ const HeroSection = () => {
             <Image src={middle} offset={offsetY}/>
             <Image2 src={background} offset={offsetY}/>
             <Image3 src={foreground} offset={offsetY}/>
-                <Heading >Cameron Arnold</Heading>
+            <Image4 src={name} offset={offsetY}/> 
         </ImageBox>
         </>
     )
