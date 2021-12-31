@@ -1,5 +1,6 @@
 import React from 'react'
-import {Nav, NavItem, NavMenu, NavIcon} from './NavbarStyles'
+import {Nav, NavItem, NavMenu, 
+    NavIcon, ColorChange, NavItems} from './NavbarStyles'
 
 const Navbar = () => {
     return (
@@ -7,12 +8,13 @@ const Navbar = () => {
         <Nav>
             <NavMenu>
                 <NavIcon>
-                    Cam.Coding()
+                    Cam.<ColorChange color="var(--lightblue)">Coding()</ColorChange>
                 </NavIcon>
-
-                <NavItem>
-                    whoami
-                </NavItem>
+                <NavItems>
+                    <NavItem>Home</NavItem>
+                    <NavItem>Projects</NavItem>
+                    <NavItem>Contact</NavItem>
+                </NavItems>
             </NavMenu>
         </Nav>
         </>
