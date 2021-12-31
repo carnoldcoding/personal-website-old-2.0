@@ -1,7 +1,6 @@
 import React, {useState, useEffect} from 'react'
 import {HeroContainer, Background, Foreground, Middleground, Name,
-HeroWrapper, NameWrapper} from './HeroStyles'
-import CC from '../../images/CC-Glow.png'
+HeroWrapper} from './HeroStyles'
 import middleground from '../../images/Middle.png'
 import foreground from '../../images/Foreground-Fade.png'
 import background from '../../images/Background.png'
