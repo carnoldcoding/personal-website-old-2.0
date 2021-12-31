@@ -23,4 +23,5 @@
   padding: 0;
   background-color: black;
   font-family: 'PT Mono', monospace;
+  scroll-behavior: smooth;
 }

@@ -1,79 +1,53 @@
 import styled from 'styled-components'
 
 export const HeroContainer = styled.div`
+    background: transparent;
+    position: relative;
+`
+
+export const HeroWrapper = styled.div`
+    height: auto;
     display: flex;
-    height: 5000px;
-    align-items: center;
     justify-content: center;
-    flex-direction: column;
 `
 
-export const HeroTitle = styled.h1`
-    z-index: 1;
-    color: white;
-    background: transparent;
-`
-
-export const ImageBox = styled.div`
-    height: 10000px;
-    background: transparent;
-    position: relative;
-    top: 0;
-    left: 0;
-`
-
-export const Image = styled.img`
-
-    background: transparent;
-    z-index: 2;
-    height: auto;
-    width: 1800px;
-    position: relative;
-    top: 0;
-    left: 0;
-    transform: translateY(${props => props.offset * -.07}px)
-`
-
-export const Image2 = styled.img`
-    
+export const Background = styled.img`
     z-index: 1;
     background: transparent;
-    height: auto;
-    width: 1800px;
+    width: 100%;
+
     position: absolute;
-    top: 0px;
-    left: 0px;
+
     transform: translateY(${props => props.offset * .1}px)
 `
 
-export const Image3 = styled.img`
-    z-index: 4;
+export const Middleground = styled.img`
+    z-index: 2;
     background: transparent;
-    height: auto;
-    width: 1800px;
+    width: 100%;
+
     position: absolute;
-    top: 0px;
-    left: 0px;
-    transform: translateY(${props => props.offset * -.3}px)
+
+    transform: translateY(${props => props.offset * -.07}px)
 `
-export const Image4 = styled.img`
-    z-index: 3;
+
+export const Name = styled.img`
     background: transparent;
-    height: auto;
-    width: 600px;
-    position: absolute;
-    top: 400px;
-    left: 515px;
+    z-index: 3;
+    width: 24%;
+    margin-top: 22%;
+    margin-right: 5%;
+
     transform: translateY(${props => props.offset * .3}px)
 `
 
-export const Heading = styled.h1`
-    z-index: 3;
-    font-size: 50px;
+export const Foreground = styled.img`
+    z-index: 4;
     background: transparent;
+    width: 100%;
+
     position: absolute;
-    top: 400px;
-    left: 650px;
-    color: white;
-    transform: translateY(${props => props.offset * .3}px)
+    
+    transform: translateY(${props => props.offset * -.3}px)
 `
+
