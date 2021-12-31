@@ -1,13 +1,13 @@
 import React, {useState, useEffect} from 'react'
-import {Hero, Image, Heading, Title, Logo} from './HeroStyles'
+import {HeroContainer, HeroTitle, Image} from './HeroStyles'
 import CC from '../../images/CC-Glow.png'
 
 
 const HeroSection = () => {
 
     /*
-        useState is here to update the position of the scrollbar every time that
-        the position is changed. Used in composition with useEffect()
+        useState is here to update the offset variable every time that
+        scrollbar position is changed. Used in composition with useEffect()
     */
     const [offsetY, setOffsetY] = useState(0);
     const handleScroll = () => setOffsetY(window.pageYOffset);
@@ -26,14 +26,13 @@ const HeroSection = () => {
 
     return (
         <>
-            <Hero>
-                <Logo> 
-                    <img src = {CC} style={{transform: `translateY(${offsetY *.2}px)`}}/>
-                </Logo>
-                <Title>
-                    <Heading>Cameron Arnold</Heading>
-                </Title>
-            </Hero>
+            <HeroContainer>
+                
+                <Image src={CC} offset={offsetY}/>
+                <HeroTitle>
+                    Cameron Arnold
+                </HeroTitle>
+            </HeroContainer>
         </>
     )
 }
