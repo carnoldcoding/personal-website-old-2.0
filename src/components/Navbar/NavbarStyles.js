@@ -2,24 +2,22 @@ import styled from 'styled-components'
 
 
 export const Nav = styled.nav`
+    z-index: 10;
+    position: sticky;
+    top: 0;
     height: 80px;
-    margin-top: 0px;
-    display: flex;
     font-size: 20px;
-
-    @media screen and (max-width: 960px) {
-        transition: 0.8s all ease;
-    }
 `;
 
 export const NavMenu = styled.nav`
     display: flex;
-    padding: 2rem;
-    flex: 0 0 100%;
+    padding: 1rem;
 `
 export const NavIcon = styled.nav`
     display: flex;
+    flex: 1 1 100%;
     padding: 1rem;
+    margin-left: 4rem;
     color: white;
 
     &:hover {
@@ -28,12 +26,12 @@ export const NavIcon = styled.nav`
 `
 export const NavItems = styled.nav`
     display: flex;
-    margin-left: auto;
     margin-right: 10rem;
 `
 
 export const NavItem = styled.nav`
     padding: 1rem;
+    margin-right: 2rem;
     color: white;
 
     &:hover {

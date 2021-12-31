@@ -10,6 +10,7 @@ const Navbar = () => {
                 <NavIcon>
                     Cam.<ColorChange color="var(--lightblue)">Coding()</ColorChange>
                 </NavIcon>
+                
                 <NavItems>
                     <NavItem>Home</NavItem>
                     <NavItem>Projects</NavItem>
