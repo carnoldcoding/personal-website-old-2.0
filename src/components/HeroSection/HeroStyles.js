@@ -3,10 +3,10 @@ import styled from 'styled-components'
 export const HeroContainer = styled.div`
     background: transparent;
     position: relative;
+    height: auto;
 `
 
 export const HeroWrapper = styled.div`
-    height: auto;
     display: flex;
     justify-content: center;
 `
@@ -50,4 +50,5 @@ export const Foreground = styled.img`
     
     transform: translateY(${props => props.offset * -.3}px)
 `
+
 
