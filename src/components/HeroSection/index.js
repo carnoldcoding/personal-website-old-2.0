@@ -33,7 +33,7 @@ const HeroSection = () => {
             <HeroWrapper>
                 <Background src={background} offset={offsetY}/>
                 <Middleground src={middleground} offset={offsetY}/>
-                <Name src={name} offset={offsetY}/>
+                <Name src = {name} offset={offsetY}/>
                 <Foreground src={foreground} offset={offsetY}/>
             </HeroWrapper>
         </HeroContainer>
