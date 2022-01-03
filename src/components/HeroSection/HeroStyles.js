@@ -3,13 +3,13 @@ import styled from 'styled-components'
 export const HeroContainer = styled.div`
     background: transparent;
     position: relative;
-    height: 100%;
+    height: 80vh;
 `
 
 export const HeroWrapper = styled.div`
     display: flex;
     justify-content: center;
-    height: 860px;
+    background: blue;   
 `
 
 export const Background = styled.img`

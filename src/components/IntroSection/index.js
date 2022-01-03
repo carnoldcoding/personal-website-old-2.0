@@ -8,7 +8,8 @@ const IntroSection = () => {
         <>
             <IntroContainer>
                 <IntroWrapper> 
-                    
+                    <IntroItem>
+                    </IntroItem>
                 </IntroWrapper>
             </IntroContainer>
         </>
