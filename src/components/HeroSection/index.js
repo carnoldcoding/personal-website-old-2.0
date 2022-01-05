@@ -1,6 +1,19 @@
-import React, {useState, useEffect} from 'react'
-import {HeroContainer, Background, Foreground, Middleground, Name,
-HeroWrapper,} from './HeroStyles'
+import React from 'react'
+
+import {
+    HeroContainer,
+    HeroWrapper,
+    Parallax,
+    Image,
+    Name
+} from './HeroStyles'
+
+import {
+    useViewportScroll,
+    useTransform,
+} from "framer-motion"
+
+/* Import Images */
 import middleground from '../../images/Middle.png'
 import foreground from '../../images/Foreground-Fade.png'
 import background from '../../images/Background.png'
@@ -8,33 +21,39 @@ import name from '../../images/cameron.png'
 
 
 const HeroSection = () => {
-
     /*
-        useState is here to update the offset variable every time that
-        scrollbar position is changed. Used in composition with useEffect()
+        ==Set up Parallax effect==
+        scrollY stores the current window scroll y value
+        useTransform() takes a motionValue, and value ranges then 
+            returns a transformed MotionValue
     */
-    const [offsetY, setOffsetY] = useState(0);
-    const handleScroll = () => setOffsetY(window.pageYOffset);
+    const { scrollY } = useViewportScroll();
+    const backgroundY = useTransform(scrollY, [0,300], [0,200]);
+    const middlegroundY = useTransform(scrollY, [0,300], [0,50]);
+    const foregroundY = useTransform(scrollY, [0,300], [0,-100]);
+    const nameY = useTransform(scrollY, [0,300], [0,170]);
 
-    /*
-        useEffect with empty list means the effect will occur upon mounting the
-        component. At component mount we want to add a scroll eventlistener.
-
-        the return statement removes the eventlistener when the component is unmounted.
-    */
-    useEffect(() => {
-        window.addEventListener("scroll", handleScroll);
-
-        return () => window.removeEventListener("scroll", handleScroll)
-    }, []);
 
     return (
         <HeroContainer>
             <HeroWrapper>
-                <Background src={background} offset={offsetY}/>
-                <Middleground src={middleground} offset={offsetY}/>
-                <Name src = {name} offset={offsetY}/>
-                <Foreground src={foreground} offset={offsetY}/>
+                <Parallax style={{ y: backgroundY, x: 0}}>
+                    <Image src={background} />
+                </Parallax>
+                
+                <Parallax style={{y: middlegroundY, x: 0}}>
+                    <Image src={middleground} />
+                </Parallax>
+                
+
+                <Parallax style={{y: nameY, x: 0 }}>
+                    <Name src={name} />
+                </Parallax>
+
+                <Parallax style={{y: foregroundY, x: 0 }}>
+                    <Image src={foreground} />
+                </Parallax>
+
             </HeroWrapper>
         </HeroContainer>
     )
