@@ -1,15 +1,9 @@
 import './App.css';
-import HeroSection from './components/HeroSection'
-import Navbar from './components/Navbar'
-import IntroSection from './components/IntroSection'
+import Home from "./pages"
 
 function App() {
   return (
-    <div>
-      <Navbar />
-      <HeroSection />
-      <IntroSection />
-    </div>
+    <Home/>
   );
 }
 

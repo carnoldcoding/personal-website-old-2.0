@@ -39,9 +39,27 @@ export const NavItem = styled.nav`
         transition: .4s ease-in-out;
         color: var(--lightblue)
     }
+
+    @media screen and (max-width: 770px){
+        display: none;
+    }
 `;
 
 export const ColorChange = styled.div(({color}) => ({
     display: 'flex',
     color: color
 }))
+
+export const MobileIcon = styled.div`
+    display: none;
+    @media screen and (max-width: 770px){
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+        transform: translate(-100%, 80%);
+        font-size: 1.8rem;
+        cursor: pointer;
+        color: #fff;
+    }
+`

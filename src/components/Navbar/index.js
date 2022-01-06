@@ -1,8 +1,9 @@
 import React from 'react'
 import {Nav, NavItem, NavMenu, 
-    NavIcon, ColorChange, NavItems} from './NavbarStyles'
+    NavIcon, ColorChange, NavItems, MobileIcon} from './NavbarStyles'
+import {FaBars} from 'react-icons/fa';
 
-const Navbar = () => {
+const Navbar = ({ toggle }) => {
     return (
         <>
         <Nav>
@@ -16,6 +17,10 @@ const Navbar = () => {
                     <NavItem>Projects</NavItem>
                     <NavItem>Contact</NavItem>
                 </NavItems>
+
+                <MobileIcon onClick = {toggle}>
+                    <FaBars />
+                </MobileIcon>
             </NavMenu>
         </Nav>
         </>
