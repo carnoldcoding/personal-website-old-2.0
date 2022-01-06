@@ -32,6 +32,14 @@ const HeroSection = () => {
     const foregroundY = useTransform(scrollY, [0,0], [0,0]);
     const nameY = useTransform(scrollY, [0,300], [0,300]);
 
+    /*
+        * Since I am overlapping images, I had to use absolute positioning.
+        * Absolute positioning removes images from the DOM which means that
+            the parent div couldn't inherit the height.
+        * To solve this I have an image of the same dimensions that is hidden
+            with relative positioning on it to pass the height into the container.
+
+    */
 
     return (
         <HeroContainer style={{ y: foregroundY, x: 0}}>
