@@ -2,10 +2,10 @@ import React from 'react'
 
 import {
     HeroContainer,
-    HeroWrapper,
-    Parallax,
     Image,
-    Name
+    Name,
+    SetHeight,
+    ImageHeight
 } from './HeroStyles'
 
 import {
@@ -28,33 +28,21 @@ const HeroSection = () => {
             returns a transformed MotionValue
     */
     const { scrollY } = useViewportScroll();
-    const backgroundY = useTransform(scrollY, [0,300], [0,200]);
-    const middlegroundY = useTransform(scrollY, [0,300], [0,50]);
-    const foregroundY = useTransform(scrollY, [0,300], [0,-100]);
-    const nameY = useTransform(scrollY, [0,300], [0,170]);
+    const backgroundY = useTransform(scrollY, [0,300], [0,-120]);
+    const middlegroundY = useTransform(scrollY, [0,300], [0,-50]);
+    const foregroundY = useTransform(scrollY, [0,0], [0,0]);
+    const nameY = useTransform(scrollY, [0,300], [0,300]);
 
 
     return (
-        <HeroContainer>
-            <HeroWrapper>
-                <Parallax style={{ y: backgroundY, x: 0}}>
-                    <Image src={background} />
-                </Parallax>
-                
-                <Parallax style={{y: middlegroundY, x: 0}}>
-                    <Image src={middleground} />
-                </Parallax>
-                
+        <HeroContainer style={{ y: foregroundY, x: 0}}>
+                <ImageHeight style={{ y: foregroundY, x: 0}} src={foreground}/>
 
-                <Parallax style={{y: nameY, x: 0 }}>
-                    <Name src={name} />
-                </Parallax>
+                <Image style={{ y: backgroundY, x: 0}} src={background} />
+                <Image style={{ y: middlegroundY, x: 0}} src={middleground}/>
+                <Name style={{ y: nameY, x: 0}} src={name} />
+                <Image style={{ y: foregroundY, x: 0}} src={foreground} />
 
-                <Parallax style={{y: foregroundY, x: 0 }}>
-                    <Image src={foreground} />
-                </Parallax>
-
-            </HeroWrapper>
         </HeroContainer>
     )
 }
