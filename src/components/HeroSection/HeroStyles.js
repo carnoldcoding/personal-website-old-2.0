@@ -39,11 +39,12 @@ export const Name = styled(motion.img)`
     background: transparent;
     width: 30%;
     margin-top: 20%;
-    margin-left: 0%;
+    margin-left: -8%;
     
     @media screen and (max-width: 770px){
        width: 80%;
        margin-top: 85%;
+       margin-left: 0%;
     }
 
     
