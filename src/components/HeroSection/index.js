@@ -4,7 +4,6 @@ import {
     HeroContainer,
     Image,
     Name,
-    SetHeight,
     ImageHeight
 } from './HeroStyles'
 
