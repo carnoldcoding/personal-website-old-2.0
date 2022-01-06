@@ -1,7 +1,5 @@
 import React from 'react'
-import {IntroContainer, IntroWrapper, IntroHeader,
-IntroSubtitle, IntroItem} from './IntroStyles'
-import {motion} from 'framer-motion'
+import {IntroContainer, IntroWrapper, IntroItem} from './IntroStyles'
 
 const IntroSection = () => {
     return (
