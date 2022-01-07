@@ -3,6 +3,7 @@ import { motion } from 'framer-motion'
 
 export const IntroContainer = styled.div`
     height: 1000px;
+    background: transparent;
 `
 
 export const HeaderWrapper = styled.div`
@@ -11,48 +12,32 @@ export const HeaderWrapper = styled.div`
 `
 
 export const Header = styled(motion.div)`
-
     color: white;
-    font-size: 2rem;
-    
-    background: transparent;
-    @media screen and (max-width: 770px){
-        font-size: 2rem;
-    }
-`
-
-export const SubtitleWrapper = styled.div`
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-
-`
-
-export const Subtitle = styled(motion.div)`
-    color: white;
+    padding: 3rem;
     margin: 1rem;
-    margin-right: 10rem;
-
-    @media screen and (max-width: 770px){
-        font-size: 1.2rem;
-    }
-`
-export const SubtitleTab = styled(motion.div)`
-    color: white;
-    margin-bottom: 1rem;
-    margin-left: 5rem;
+    font-size: 3rem;
 `
 
-export const CodeBox = styled.div`
+export const CodeWrapper = styled.div`
     display: flex;
-    width: 25vw;
-    flex-wrap: wrap;
-
-    @media screen and (max-width: 770px){
-
-    }
+    justify-content: center;
+    height: 20%;
+`
+export const CodeBox = styled(motion.div)`
+    width: 25rem;
 `
 
-export const ColorChange = styled.span`
+export const Code = styled(motion.div)`
+    color: white;
+    padding: 1rem;
+`
+
+export const TabCode = styled(motion.div)`
+    color: white;
+    padding: 1rem;
+    padding-left: 2rem;
+`
+
+export const Color = styled.span`
     color: ${props => props.color}
 `

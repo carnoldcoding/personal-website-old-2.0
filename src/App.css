@@ -16,6 +16,11 @@
   --lightblue: #05d9e8;
   --navyblue: #005678;
   --darkblue: #01012b;
+
+  /* Scheme 3 */
+  --lightgreen: #80ce87;
+  --green: #22b455;
+  --darkgreen: #204829;
 }
 
 *{
