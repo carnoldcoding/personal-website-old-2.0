@@ -1,22 +1,24 @@
 import styled from 'styled-components'
-import {motion} from 'framer-motion'
+import { motion } from 'framer-motion'
 
 export const IntroContainer = styled.div`
     position: relative;
-`
-
-export const IntroWrapper = styled.div`
-    display: flex;
-    align-items: center;
     height: 1000px;
-    width: 100%
+    width: 100%;
+    display: flex;
+    justify-content: center;
 `
 
-export const IntroItem = styled(motion.div)`
-    padding: 1rem;
-    margin: 1rem;
-    fontSize: 10rem;
-    color: white;
+export const HeaderWrapper = styled.div`
     
-    flex: 1 1 100%;
-    `
+`
+
+export const Header = styled(motion.div)`
+    color: white;
+    font-size: 2rem;
+    
+    background: transparent;
+    @media screen and (max-width: 770px){
+        font-size: 1rem;
+    }
+`
