@@ -1,5 +1,3 @@
-import { useIsMobile } from '../../hooks'
-
 export const headerVariants = (isMobile) => isMobile
     ?{
             hidden: {
