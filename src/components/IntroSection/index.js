@@ -1,10 +1,12 @@
 import React, { useEffect } from 'react'
 import {IntroContainer, HeaderWrapper, Header, Color,
-CodeWrapper, Code, CodeBox, TabCode} from './IntroStyles'
+CodeWrapper, Code, CodeBox, TabCode } from './IntroStyles'
 import { useIsMobile } from '../../hooks'
-import { useAnimation } from 'framer-motion'
+import { useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { codeBox, headerVariants, codeItems } from './Variants'
+
+
 
 const IntroSection = () => {
     /*
@@ -68,6 +70,7 @@ const IntroSection = () => {
                     </Code>
                 </CodeBox>
             </CodeWrapper>
+
         </IntroContainer>
         </>
     )
