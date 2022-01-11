@@ -1,4 +1,5 @@
 import styled from 'styled-components'
+import {motion} from 'framer-motion'
 
 
 export const Nav = styled.nav`
@@ -13,7 +14,7 @@ export const NavMenu = styled.nav`
     display: flex;
     padding: 1rem;
 `
-export const NavIcon = styled.nav`
+export const NavIcon = styled(motion.nav)`
     display: flex;
     flex: 1 1 100%;
     padding: 1rem;
@@ -24,12 +25,12 @@ export const NavIcon = styled.nav`
         cursor: pointer;
     }
 `
-export const NavItems = styled.nav`
+export const NavItems = styled(motion.nav)`
     display: flex;
     margin-right: 10rem;
 `
 
-export const NavItem = styled.nav`
+export const NavItem = styled(motion.div)`
     padding: 1rem;
     margin-right: 2rem;
     color: white;
