@@ -2,8 +2,8 @@ import styled from 'styled-components'
 import { motion } from 'framer-motion'
 
 export const IntroContainer = styled.div`
-    height: 1000px;
     background: transparent;
+    margin-bottom: 10vh;
 `
 
 export const HeaderWrapper = styled.div`
@@ -49,20 +49,9 @@ export const SpriteWrapper = styled.div`
 `
 
 export const Sprite = styled(motion.div)`
-    height: 55px;
-    width: calc(348px / 6);
-    background-color: lightpink;
+    height: 200px;
+    width: 175px;
     background-image: url("${props=>props.url}");
-    animation: animate 1s steps(6) infinite;
-    
-    @keyframes animate{
-        from{
-            background-position: 0;
-        }
-        to {
-            background-position: 348px;
-        }
-    }
 `
 
 export const Color = styled.span`

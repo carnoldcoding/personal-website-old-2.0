@@ -5,6 +5,7 @@ import { useIsMobile } from '../../hooks'
 import { useAnimation} from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { codeBox, headerVariants, codeItems } from './Variants'
+import megaman from '../../images/Megaman.gif'
 
 
 
@@ -33,6 +34,7 @@ const IntroSection = () => {
         if (!inView){
             controls.start('hidden');
         }
+        
     }, [controls, inView])
 
     return (
@@ -70,7 +72,6 @@ const IntroSection = () => {
                     </Code>
                 </CodeBox>
             </CodeWrapper>
-
         </IntroContainer>
         </>
     )
