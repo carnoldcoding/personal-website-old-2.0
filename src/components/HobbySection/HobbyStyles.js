@@ -5,6 +5,10 @@ export const HobbyContainer = styled(motion.div)`
     display: flex;
     background-color: black;
     justify-content: center;
+
+    @media screen and (max-width: 780px){
+        flex-direction: column;
+    }
 `
 
 export const CardTitle = styled.h2`
