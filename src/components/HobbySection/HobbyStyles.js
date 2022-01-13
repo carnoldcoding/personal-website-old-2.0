@@ -41,6 +41,7 @@ export const CardContent = styled.div`
         hsl(20 0% 0% / .3) 20%,
         hsl(0 0% 0% /1)
     );
+    height: 100%;
 
     padding: var(--padding);
     transform: translateY(69%);
