@@ -35,8 +35,7 @@ const HobbySection = () => {
             ref={ref}
             animate={controls}>
             <CardWrapper 
-            url={bgImage}
-            variants={CardVariants(isMobile)}>
+            url={bgImage}>
                 <CardContent>
                     <CardTitle>
                         Video Games
