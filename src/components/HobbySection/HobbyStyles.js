@@ -44,8 +44,16 @@ export const CardContent = styled.div`
     height: 100%;
 
     padding: var(--padding);
-    transform: translateY(69%);
+    transform: translateY(17vh);
     transition: transform .5s ease;
+
+    @media screen and (max-width: 800px){
+        transform: translateY(21vh);
+    }
+
+    @media screen and (max-width: 1400px) and (min-width: 1000px){
+        transform: translateY(23vh);
+    }
 
 `
 
