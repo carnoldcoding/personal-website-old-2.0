@@ -49,10 +49,10 @@ export const CardContent = styled.div`
     //Move the card content off of the card,
     //Then use translateY to bring it back
     //Need the units to be responsive
-    transform: translateY(55%);
+    transform: translateY(50%);
 
     @media screen and (max-width: 800px){
-        transform: translateY(70%);
+        transform: translateY(65%);
     }
 
 `

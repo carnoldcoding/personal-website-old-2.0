@@ -44,9 +44,6 @@ const HobbySection = () => {
                         Playing and developing games has been 
                         a passion and hobby of mine.
                     </CardBody>
-                    <CardButton>
-                        Expand
-                    </CardButton>
                 </CardContent>
             </CardWrapper>
 
@@ -59,9 +56,6 @@ const HobbySection = () => {
                         A lot of my philosophies and artistic
                         inspirations come from Japanese culture.
                     </CardBody>
-                    <CardButton>
-                        Expand
-                    </CardButton>
                 </CardContent>
             </CardWrapper>
 
@@ -74,9 +68,6 @@ const HobbySection = () => {
                         Programming is the way I connect to the 
                         world around me.
                     </CardBody>
-                    <CardButton>
-                        Expand
-                    </CardButton>
                 </CardContent>
             </CardWrapper>
             
