@@ -76,6 +76,7 @@ export const ContactInfoWrapper = styled.div`
     display: flex;
     @media screen and (max-width: 800px){
         flex-direction: column;
+        margin-bottom: 5rem;
     }
 `
 
@@ -83,5 +84,6 @@ export const ContactInfo = styled.div`
     flex: 1 1 50%;
     @media screen and (max-width: 800px){
         margin: 1rem 0;
+        opacity: 0;
     }
 `
