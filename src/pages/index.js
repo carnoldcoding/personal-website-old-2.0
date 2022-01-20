@@ -4,6 +4,7 @@ import Navbar from '../components/Navbar'
 import IntroSection from '../components/IntroSection'
 import MobileNav from '../components/MobileNav'
 import HobbySection from '../components/HobbySection'
+import Footer from '../components/Footer'
 
 const Home = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -20,6 +21,7 @@ const Home = () => {
       <HeroSection />
       <IntroSection />
       <HobbySection />
+      <Footer />
     </div>
   )
 }
