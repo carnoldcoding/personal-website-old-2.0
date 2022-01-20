@@ -1,5 +1,6 @@
 import styled from 'styled-components'
 import {motion} from 'framer-motion'
+import {NavLink as Link} from 'react-router-dom'
 
 
 export const Nav = styled.nav`
@@ -13,6 +14,9 @@ export const Nav = styled.nav`
 export const NavMenu = styled.nav`
     display: flex;
     padding: 1rem;
+    *{
+        text-decoration: none;
+    }
 `
 export const NavIcon = styled(motion.nav)`
     display: flex;
@@ -25,9 +29,25 @@ export const NavIcon = styled(motion.nav)`
         cursor: pointer;
     }
 `
-export const NavItems = styled(motion.nav)`
+export const NavItems = styled(motion.div)`
     display: flex;
     margin-right: 10rem;
+`
+
+export const NavItemLink = styled(Link)`
+`
+
+export const NavIconLink = styled(Link)`
+    display: flex;
+    color: white;
+
+    transition: all .2s ease;
+    :hover{
+        color: var(--lightblue);
+        *{
+            color: white;
+        }
+    }
 `
 
 export const NavItem = styled(motion.div)`
@@ -44,12 +64,17 @@ export const NavItem = styled(motion.div)`
     @media screen and (max-width: 770px){
         display: none;
     }
-`;
+`
 
-export const ColorChange = styled.div(({color}) => ({
-    display: 'flex',
-    color: color
-}))
+export const ColorChange = styled.div`
+    display: flex;
+    color: ${props=>props.color};
+    transition: all .2s ease;
+
+    :hover{
+        color: white;
+    }
+`
 
 export const MobileIcon = styled.div`
     display: none;

@@ -1,9 +1,36 @@
 import './App.css';
-import Home from "./pages"
+import Home from './pages/Home'
+import Contact from './pages/Contact'
+import Footer from "./components/Footer"
+import MobileNav from './components/MobileNav'
+import Navbar from './components/Navbar'
+import React, {useState} from 'react'
+import { HashRouter as Router, Routes, Route } from 'react-router-dom'
+
 
 function App() {
+  const [isOpen, setIsOpen] = useState(false);
+
+  const toggle = () => {
+    console.log("isOpen: "+ isOpen);
+    setIsOpen(!isOpen)
+  }
+
   return (
-    <Home/>
+    <>
+      <Router>
+        <MobileNav isOpen={isOpen} toggle={toggle} />
+        <Navbar toggle={toggle}/>
+        
+        <Routes>
+          <Route exact path="/" element={<Home/>}/>
+          <Route exact path="/contact" element={<Contact/>}/>
+        </Routes>
+
+        <Footer />
+      </Router>
+    </>
+
   );
 }
 

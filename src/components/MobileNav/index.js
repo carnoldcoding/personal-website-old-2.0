@@ -10,10 +10,10 @@ const MobileNav = ({ toggle, isOpen }) => {
         <>
             <MobileContainer isOpen={isOpen} onClick={toggle}>
                 <MobileWrapper>
-                    <MobileItem>
+                    <MobileItem to="/">
                         Projects
                     </MobileItem>
-                    <MobileItem>
+                    <MobileItem to="/contact">
                         Contact
                     </MobileItem>
                 </MobileWrapper>

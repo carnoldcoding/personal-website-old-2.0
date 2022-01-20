@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import {NavLink as Link} from 'react-router-dom'
+
 
 export const MobileContainer = styled.aside`
     position: fixed;
@@ -19,11 +21,17 @@ export const MobileContainer = styled.aside`
 
 export const MobileWrapper = styled.div`
     color: white;
+    display: flex;
+    flex: 1 1 100%;
+    justify-content: center;
+    flex-direction: column;
 `
 
-export const MobileItem = styled.div`
+export const MobileItem = styled(Link)`
     margin: 4rem;
     font-size: 1.4rem;
+    text-decoration: none;
+    color: white;
 
     &:hover {
         color: var(--lightblue)
