@@ -1,14 +1,17 @@
 export const headerVariants = (isMobile) => isMobile
     ?{
-            hidden: {
-                scale: 0
-            },
-            visible: {
-                scale: 1,
-                transition: {
-                    duration: 2
-                }
+        hidden: {
+            x: -700,
+            opacity: 0,
+        },
+        visible: {
+            x: 0,
+            opacity: 1,
+            transition: {
+                type: "spring",
+                duration: 3
             }
+        }
         }
         :{
             hidden: {

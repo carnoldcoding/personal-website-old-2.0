@@ -17,7 +17,6 @@ const Navbar = ({ toggle }) => {
                 variants={container} 
                 initial="hidden"
                 animate="visible">
-                    <NavItem variants={item}>Home</NavItem>
                     <NavItem variants={item}>Projects</NavItem>
                     <NavItem variants={item}>Contact</NavItem>
                 </NavItems>
