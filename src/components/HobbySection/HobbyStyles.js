@@ -44,15 +44,15 @@ export const CardContent = styled.div`
     height: 100%;
 
     padding: var(--padding);
-    transform: translateY(17vh);
     transition: transform .5s ease;
 
-    @media screen and (max-width: 800px){
-        transform: translateY(21vh);
-    }
+    //Move the card content off of the card,
+    //Then use translateY to bring it back
+    //Need the units to be responsive
+    transform: translateY(55%);
 
-    @media screen and (max-width: 1400px) and (min-width: 1000px){
-        transform: translateY(23vh);
+    @media screen and (max-width: 800px){
+        transform: translateY(70%);
     }
 
 `
