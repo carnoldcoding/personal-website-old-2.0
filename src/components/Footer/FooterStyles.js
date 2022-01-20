@@ -14,12 +14,27 @@ export const FooterContainer = styled.div`
     }
 
     font-size: 1.1rem;
+
+    @media screen and (max-width: 700px){
+        height: auto;
+    }
 `
 
 export const FooterWrapper = styled.div`
     display: flex;
     flex: 1;
     justify-content: center;
+
+    @media screen and (max-width: 700px){
+        flex-direction: column;
+    }
+
+    * {
+        @media screen and (max-width: 700px){
+            margin-top: 1.5rem;
+            text-align: center;
+        }
+    }
 `
 
 export const FooterSubtitleWrapper = styled.p`
@@ -43,6 +58,9 @@ export const FooterIconWrapper = styled.div`
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    @media screen and (max-width: 700px){
+            margin-bottom: 2rem;
+    }
 `
 
 export const FooterIcon = styled.a`
@@ -56,5 +74,9 @@ export const FooterIcon = styled.a`
     :hover{
         color: var(--lightblue);
         cursor: pointer;
+    }
+
+    @media screen and (max-width: 700px){
+        font-size: 2rem;
     }
 `
