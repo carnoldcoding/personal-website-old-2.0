@@ -45,9 +45,12 @@ export const FooterIconWrapper = styled.div`
     justify-content: center;
 `
 
-export const FooterIcon = styled.div`
+export const FooterIcon = styled.a`
     margin: 0 1rem;
     font-size: 1.4rem;
+    color: white;
+
+    text-decoration: none;
 
     transition: all .3s ease-in-out;
     :hover{

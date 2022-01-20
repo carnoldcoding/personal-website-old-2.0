@@ -32,16 +32,16 @@ const Footer = () => {
               </WebsiteRightsWrapper>
 
               <FooterIconWrapper>
-                  <FooterIcon>
+                  <FooterIcon href="//www.twitter.com/CarnoldCoding" target="_blank">
                       <FaTwitter/>
                   </FooterIcon>
-                  <FooterIcon>
+                  <FooterIcon href="//www.github.com/carnoldcoding" target="_blank">
                       <FaGithub/>
                   </FooterIcon>
-                  <FooterIcon>
+                  <FooterIcon href="//www.facebook.com/cameron.arnold.549436" target="_blank">
                       <FaFacebook/>
                   </FooterIcon>
-                  <FooterIcon>
+                  <FooterIcon href="//www.linkedin.com/in/cameron-arnold-8b47281a0/" target="_blank">
                       <FaLinkedin/>
                   </FooterIcon>
               </FooterIconWrapper>
