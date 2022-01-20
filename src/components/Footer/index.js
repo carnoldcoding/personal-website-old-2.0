@@ -31,7 +31,7 @@ const Footer = () => {
                 </WebsiteRights>
               </WebsiteRightsWrapper>
 
-              <FooterIconWrapper>
+              {/* <FooterIconWrapper>
                   <FooterIcon href="//www.twitter.com/CarnoldCoding" target="_blank">
                       <FaTwitter/>
                   </FooterIcon>
@@ -44,7 +44,7 @@ const Footer = () => {
                   <FooterIcon href="//www.linkedin.com/in/cameron-arnold-8b47281a0/" target="_blank">
                       <FaLinkedin/>
                   </FooterIcon>
-              </FooterIconWrapper>
+              </FooterIconWrapper> */}
 
           </FooterWrapper>
       </FooterContainer>
