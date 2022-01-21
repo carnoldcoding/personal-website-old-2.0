@@ -4,8 +4,8 @@ import Me from "../../images/Profile.jpg"
 export const InformationContainer = styled.div`
     color: white;
     margin: 5rem 0;
-    padding: 0 25vw;
-    height: 55vh;
+    padding: 0 20vw;
+    height: 65vh;
 
     transition: all .2s ease;
 
@@ -74,6 +74,7 @@ export const ContactIcon = styled.a`
 
 export const ContactInfoWrapper = styled.div`
     display: flex;
+    margin: 2rem 0;
     @media screen and (max-width: 800px){
         flex-direction: column;
         margin-bottom: 5rem;

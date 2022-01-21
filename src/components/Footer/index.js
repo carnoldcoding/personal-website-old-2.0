@@ -19,11 +19,11 @@ const Footer = () => {
     <>
       <FooterContainer>
           <FooterWrapper>
-              <FooterSubtitleWrapper>
+              {/* <FooterSubtitleWrapper>
                 <FooterSubtitle>
-                    Cam.Coding()
+                    CC
                 </FooterSubtitle>
-              </FooterSubtitleWrapper>
+              </FooterSubtitleWrapper> */}
 
               <WebsiteRightsWrapper>
                 <WebsiteRights>

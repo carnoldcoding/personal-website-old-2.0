@@ -1,14 +1,14 @@
 import styled from 'styled-components'
 
 export const FooterContainer = styled.div`
-    height: 80px;
+    min-height: 80px;
     margin-top: 2rem;
     display: flex;
     justify-content: center;
     align-items: center;
     color: white;
     //background: linear-gradient(to bottom, purple, var(--purple) 50%, var(--darkpurple));
-    background: linear-gradient(to bottom, var(--darkpurple), transparent);
+    background: black;
     * {
         background: transparent;
     }
@@ -51,7 +51,7 @@ export const WebsiteRightsWrapper = styled.div`
     justify-content: center;
 `
 export const WebsiteRights = styled.p`
-
+    font-size: .9rem;
 `
 
 export const FooterIconWrapper = styled.div`

@@ -47,9 +47,9 @@ const IntroSection = () => {
                 variants={headerVariants(isMobile)}>
                     .
                     <Color color="var(--lightblue)">About</Color>
-                    <Color color="var(--magenta)">(</Color>
+                    <Color color="var(--navyblue)">(</Color>
                     me
-                    <Color color="var(--magenta)">)</Color>
+                    <Color color="var(--navyblue)">)</Color>
                 </Header>
             </HeaderWrapper>
             <CodeWrapper>

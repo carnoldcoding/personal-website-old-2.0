@@ -9,11 +9,18 @@ export const Nav = styled.nav`
     top: 0;
     height: 80px;
     font-size: 20px;
+
+    background: #0d0c0c;
+
+    *{
+        background: transparent;
+    }
 `;
 
 export const NavMenu = styled.nav`
     display: flex;
-    padding: 1rem;
+    padding: 1rem 3rem;
+
     *{
         text-decoration: none;
     }
@@ -22,16 +29,14 @@ export const NavIcon = styled(motion.nav)`
     display: flex;
     flex: 1 1 100%;
     padding: 1rem;
-    margin-left: 4rem;
     color: white;
 
     &:hover {
-        cursor: pointer;
+        //cursor: pointer;
     }
 `
 export const NavItems = styled(motion.div)`
     display: flex;
-    margin-right: 10rem;
 `
 
 export const NavItemLink = styled(Link)`

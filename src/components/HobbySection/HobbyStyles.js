@@ -22,7 +22,7 @@ export const CardTitle = styled.h2`
         content: "";
         position: absolute;
         width: calc(100% + var(--padding));
-        background: var(--lightgreen);
+        background: var(--lightpink);
         height: 4px;
 
         left: calc(var(--padding) * -1);
