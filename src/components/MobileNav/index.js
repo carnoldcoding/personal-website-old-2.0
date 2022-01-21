@@ -13,9 +13,9 @@ const MobileNav = ({ toggle, isOpen }) => {
                     <MobileItem to="/projects">
                         Projects
                     </MobileItem>
-                    {/* <MobileItem to="/contact">
+                    <MobileItem to="/contact">
                         Contact
-                    </MobileItem> */}
+                    </MobileItem>
                 </MobileWrapper>
             </MobileContainer>
         </>

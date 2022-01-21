@@ -38,7 +38,7 @@ export const CardContent = styled.div`
     --padding: 1.5rem;
     background: linear-gradient(
         hsl(0 0% 0% / 0),
-        hsl(20 0% 0% / .3) 20%,
+        hsl(20 0% 0% / .5) 10%,
         hsl(0 0% 0% /1)
     );
     height: 100%;

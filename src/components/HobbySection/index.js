@@ -4,8 +4,9 @@ import { useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { HobbyContainer, CardWrapper, CardTitle,
 CardButton, CardBody, CardContent} from './HobbyStyles'
+
 import { 
-    CardVariants } from './Variants'
+    CardVariants, ContainerVariants } from './Variants'
 
 import bgImage from '../../images/Gaming.jpeg'
 import animeImage from '../../images/Anime.jpeg'
@@ -33,7 +34,9 @@ const HobbySection = () => {
     return (
         <HobbyContainer
             ref={ref}
-            animate={controls}>
+            animate={controls}
+            variants={ContainerVariants(isMobile)}
+            >
             <CardWrapper 
             url={bgImage}>
                 <CardContent>

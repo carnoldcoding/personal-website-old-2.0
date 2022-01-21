@@ -22,9 +22,9 @@ const Navbar = ({ toggle }) => {
                     <NavItemLink to="/projects">
                         <NavItem variants={item}>Projects</NavItem>
                     </NavItemLink>
-                    {/* <NavItemLink to="/contact">
+                    <NavItemLink to="/contact">
                         <NavItem variants={item}>Contact</NavItem>
-                    </NavItemLink> */}
+                    </NavItemLink>
                 </NavItems>
 
                 <MobileIcon onClick = {toggle}>
