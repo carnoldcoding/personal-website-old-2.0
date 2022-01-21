@@ -19,12 +19,12 @@ const Navbar = ({ toggle }) => {
                 variants={container} 
                 initial="hidden"
                 animate="visible">
-                    <NavItemLink to="/">
+                    <NavItemLink to="/projects">
                         <NavItem variants={item}>Projects</NavItem>
                     </NavItemLink>
-                    <NavItemLink to="/contact">
+                    {/* <NavItemLink to="/contact">
                         <NavItem variants={item}>Contact</NavItem>
-                    </NavItemLink>
+                    </NavItemLink> */}
                 </NavItems>
 
                 <MobileIcon onClick = {toggle}>

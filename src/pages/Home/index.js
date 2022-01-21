@@ -2,6 +2,7 @@ import React, {useState} from 'react'
 import HeroSection from '../../components/HeroSection'
 import IntroSection from '../../components/IntroSection'
 import HobbySection from '../../components/HobbySection'
+import Information from '../../components/Information'
 
 const Home = () => {
 
@@ -11,8 +12,7 @@ const Home = () => {
       <HeroSection />
       <IntroSection />
       <HobbySection />
-
-      
+      <Information />
     </div>
   )
 }

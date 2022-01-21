@@ -5,7 +5,6 @@ export const InformationContainer = styled.div`
     color: white;
     margin: 5rem 0;
     padding: 0 20vw;
-    height: 65vh;
 
     transition: all .2s ease;
 
@@ -35,7 +34,14 @@ export const Photo = styled.div`
     width: 300px;
     background-size: contain;
     border-radius: 100%;
+    border: 5px outset var(--lightblue);
     background-image: url(${Me});
+
+    transition: all .2s ease;
+
+    :hover{
+        transform: scale(1.1);
+    }
 `
 
 export const ContactWrapper = styled.div`
@@ -85,6 +91,5 @@ export const ContactInfo = styled.div`
     flex: 1 1 50%;
     @media screen and (max-width: 800px){
         margin: 1rem 0;
-        opacity: 0;
     }
 `
