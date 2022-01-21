@@ -35,7 +35,7 @@ const Information = () => {
                 <ContactInfoWrapper>
                     <ContactInfo>
                         I'm available across all of these platforms, feel free
-                        drop by!
+                        to drop by!
                     </ContactInfo>
                 </ContactInfoWrapper>
                 
