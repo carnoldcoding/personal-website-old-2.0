@@ -47,28 +47,28 @@ const IntroSection = () => {
                 variants={headerVariants(isMobile)}>
                     .
                     <Color color="var(--lightblue)">About</Color>
-                    <Color color="var(--navyblue)">(</Color>
+                    <Color color="var(--lightestblue)">(</Color>
                     me
-                    <Color color="var(--navyblue)">)</Color>
+                    <Color color="var(--lightestblue)">)</Color>
                 </Header>
             </HeaderWrapper>
             <CodeWrapper>
                 <CodeBox ref={ref} animate={controls} variants={codeBox(isMobile)}>
                     <Code variants={codeItems(isMobile)}>
-                        <Color color='var(--lightpink)'>Education</Color>
+                        <Color color='var(--lightblue)'>Education</Color>
                         : 
-                        <Color color='var(--magenta)'>{' {'}</Color>
+                        <Color color='var(--lightestblue)'>{' {'}</Color>
                     </Code>
                     <TabCode variants={codeItems(isMobile)}>
-                        <Color color="var(--purple)">College: </Color>
+                        <Color color="var(--navyblue)">College: </Color>
                         "Ithaca College", <br/> <br/>
-                        <Color color="var(--purple)">Degree: </Color>
+                        <Color color="var(--navyblue)">Degree: </Color>
                         "B.S in Computer Science", <br/><br/>
-                        <Color color="var(--purple)">Minor: </Color>
+                        <Color color="var(--navyblue)">Minor: </Color>
                         "Web Development"
                     </TabCode>
                     <Code variants={codeItems(isMobile)}>
-                        <Color color="var(--magenta)">{'}'}</Color>
+                        <Color color="var(--lightestblue)">{'}'}</Color>
                     </Code>
                 </CodeBox>
             </CodeWrapper>
