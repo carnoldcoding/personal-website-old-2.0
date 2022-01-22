@@ -10,7 +10,7 @@ export const ContainerVariants = (isMobile) => isMobile
             x: 0,
             transition: {
                 duration: 2,
-                staggerChildren: 1
+                delay: .75
             }
         }
 
@@ -26,10 +26,37 @@ export const ContainerVariants = (isMobile) => isMobile
 
             transition: {
                 duration: 2,
-                staggerChildren: 1
+                delay: .75
             }
         }
     }
+
+export const TitleVariants = (isMobile) => isMobile
+?{
+    hidden: {
+        opacity: 0,
+        x: "-10vh"
+    },
+    visible: {
+        opacity: 1,
+        x: 0,
+        transition: {
+            duration: 2
+        }
+    }
+}
+:{
+    hidden: {
+        opacity: 0,
+    },
+    visible: {
+        opacity: 1,
+        transition: {
+            duration: 2
+        }
+    }
+}
+
 
 export const CardVariants = (isMobile, i) => isMobile
     ?{

@@ -46,7 +46,7 @@ const IntroSection = () => {
                 animate={controls}
                 variants={headerVariants(isMobile)}>
                     .
-                    <Color color="var(--lightblue)">About</Color>
+                    <Color color="white">About</Color>
                     <Color color="var(--lightestblue)">(</Color>
                     me
                     <Color color="var(--lightestblue)">)</Color>
@@ -55,7 +55,7 @@ const IntroSection = () => {
             <CodeWrapper>
                 <CodeBox ref={ref} animate={controls} variants={codeBox(isMobile)}>
                     <Code variants={codeItems(isMobile)}>
-                        <Color color='var(--lightblue)'>Education</Color>
+                        <Color color='white'>Education</Color>
                         : 
                         <Color color='var(--lightestblue)'>{' {'}</Color>
                     </Code>

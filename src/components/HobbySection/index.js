@@ -3,10 +3,10 @@ import { useIsMobile } from '../../hooks'
 import { useAnimation } from 'framer-motion'
 import { useInView } from 'react-intersection-observer'
 import { HobbyContainer, CardWrapper, CardTitle,
-CardButton, CardBody, CardContent} from './HobbyStyles'
+CardButton, CardBody, CardContent, HobbyTitle} from './HobbyStyles'
 
 import { 
-    CardVariants, ContainerVariants } from './Variants'
+    CardVariants, ContainerVariants, TitleVariants } from './Variants'
 
 import bgImage from '../../images/Gaming.jpeg'
 import animeImage from '../../images/Anime.jpeg'
@@ -32,6 +32,11 @@ const HobbySection = () => {
     }, [controls, inView])
 
     return (
+        <>
+        <HobbyTitle ref={ref} animate={controls} variants={TitleVariants(isMobile)}>
+            .Passions
+            <span style={{color: "var(--lightestblue)"}}>()</span>
+        </HobbyTitle>
         <HobbyContainer
             ref={ref}
             animate={controls}
@@ -75,6 +80,7 @@ const HobbySection = () => {
             </CardWrapper>
             
         </HobbyContainer>
+        </>
     )
 }
 

@@ -11,6 +11,13 @@ export const HobbyContainer = styled(motion.div)`
     }
 `
 
+export const HobbyTitle = styled(motion.div)`
+    display: flex;
+    color: white;
+    font-size: 3rem;
+    justify-content: center;
+    `
+
 export const CardTitle = styled.h2`
     background-color: transparent;
     color: white;
