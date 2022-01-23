@@ -18,7 +18,7 @@ const HobbySection = () => {
     const controls = useAnimation()
     
     const { ref, inView } = useInView({
-        threshold: .3
+        threshold: .1
     });
 
     useEffect(() => {
