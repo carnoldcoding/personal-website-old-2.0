@@ -29,7 +29,7 @@ export const CardTitle = styled.h2`
         content: "";
         position: absolute;
         width: calc(100% + var(--padding));
-        background: var(--lightpink);
+        background: var(--lightestblue);
         height: 4px;
 
         left: calc(var(--padding) * -1);
@@ -114,7 +114,7 @@ export const CardButton = styled.a`
     cursor: pointer;
     text-decoration: none;
 
-    background: var(--green);
+    background: var(--lightestblue);
     border-radius: .3rem;
     transition: all .5s ease-in-out;
 
