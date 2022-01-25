@@ -11,6 +11,8 @@ import {
     ImageLink
 } from './ProjectStyles'
 
+import { useIsMobile } from '../../../hooks';
+
 const Project = ({
     header,
     subtitle,
@@ -18,16 +20,19 @@ const Project = ({
     link,
     contribution
 }) => {
+    const isMobile = useIsMobile();
+    
   return (
       <>
       
       <ProjectContainer>
           <ProjectWrapper>
+              {!isMobile && 
             <ImageWrapper>
                 <ImageLink href={link} target="_blank">
                     <Image src={image} />
                 </ImageLink>
-            </ImageWrapper>
+            </ImageWrapper>}
 
               <TextWrapper>
                   <ProjectHeader>

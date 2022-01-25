@@ -3,7 +3,7 @@ import styled from 'styled-components'
 export const ProjectContainer = styled.div`
     display: flex;
     margin: 5rem 1rem;
-`
+    `
 
 export const ProjectWrapper = styled.div`
     display: flex;
@@ -11,8 +11,8 @@ export const ProjectWrapper = styled.div`
     flex: 1 1 100%;
     
     @media screen and (max-width: 800px){
-        align-items: center;
         flex-direction: column;
+        padding: 1rem;
     }
 `
 export const TextWrapper = styled.div`
@@ -48,7 +48,6 @@ export const ImageWrapper = styled.div`
     flex: 1 1 40%;
     justify-content: flex-end;
     margin-right: 3rem;
-    
 `
 export const ImageLink = styled.a`
 
@@ -62,7 +61,10 @@ export const Image = styled.img`
     border-radius: 1rem;
 
     transition: all .2s ease;
-    :hover{
-        transform: scale(1.1);
+    
+    @media screen and (min-width: 800px){
+        :hover{
+            transform: scale(1.1);
+        }
     }
 `
