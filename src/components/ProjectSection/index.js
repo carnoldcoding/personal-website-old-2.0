@@ -1,15 +1,31 @@
 import React from 'react';
+import {
+  ProjectsContainer,
+  ProjectsWrapper,
+  ProjectsHeader
+ } from './ProjectSectionStyles';
+ import Project from './Project'
+ import {firstProject} from "./Project/data"
+
 
 const ProjectSection = () => {
   return (
       <>
-      <div
-      style={{
-        color: 'white',
-        fontSize: '2rem',
-        textAlign: 'center',
-        margin: '2rem'
-      }}>~ Projects will go here ~ </div>
+      <ProjectsContainer>
+        <ProjectsHeader>
+            <span style={{color:"var(--lightestblue)"}}>.</span>
+            Projects
+            <span style={{color:"var(--lightestblue)"}}>(</span>
+            <span style={{color:"var(--lightestblue)"}}>)</span>
+        </ProjectsHeader>
+
+        <ProjectsWrapper>
+          
+          <Project {...firstProject}/>
+
+        </ProjectsWrapper>
+
+      </ProjectsContainer>
       </>
   );
 };
