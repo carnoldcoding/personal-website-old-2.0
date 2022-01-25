@@ -1,7 +1,6 @@
 import styled from 'styled-components'
 
 export const ProjectsContainer = styled.div`
-    height: 80vh;
     padding: 1rem;
     color: white;
     *{background: transparent;}

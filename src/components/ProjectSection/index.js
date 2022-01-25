@@ -5,7 +5,7 @@ import {
   ProjectsHeader
  } from './ProjectSectionStyles';
  import Project from './Project'
- import {firstProject} from "./Project/data"
+ import {firstProject, secondProject, thirdProject, fourthProject} from "./Project/data"
 
 
 const ProjectSection = () => {
@@ -22,6 +22,10 @@ const ProjectSection = () => {
         <ProjectsWrapper>
           
           <Project {...firstProject}/>
+          <Project {...secondProject}/>
+          <Project {...thirdProject}/>
+          <Project {...fourthProject}/>
+
 
         </ProjectsWrapper>
 

@@ -44,7 +44,7 @@ const Project = ({
                   </ProjectSubtitle>
 
                   <ProjectComment>
-                      //Contribution
+                      //Description
                   </ProjectComment>
 
                   <ProjectSubtitle>

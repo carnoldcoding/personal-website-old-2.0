@@ -16,14 +16,20 @@ export const ProjectWrapper = styled.div`
     }
 `
 export const TextWrapper = styled.div`
+    z-index: 0;
     flex: 1 1 60%;
-    line-height: 3rem;
     margin: 1 1rem;
+
+    background: #0d0c0c;
+    border-radius: 1rem;
+    padding: 1rem;
+    transition: all 1s ease;
 
 `
 
 export const ProjectHeader = styled.div`
     font-size: 2rem;
+    line-height: 4rem;
 `
 
 export const ProjectComment = styled.div`
@@ -32,13 +38,17 @@ export const ProjectComment = styled.div`
 
 export const ProjectSubtitle = styled.div`
     margin-left: 1rem;
+    margin-bottom: 1rem;
+    line-height: 2rem;
 `
 
 export const ImageWrapper = styled.div`
+    z-index: 1;
     display: flex;
     flex: 1 1 40%;
     justify-content: flex-end;
     margin-right: 3rem;
+    
 `
 export const ImageLink = styled.a`
 
